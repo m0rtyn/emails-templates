@@ -1,0 +1,32 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles
+
+
+// Full Width Headers
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p {
+  color: $dark-color;
+  padding-top: 15px;
+}
+
+.header .wrapper-inner {
+  padding: 20px;
+}
+
+
+// Social Media
+table.button.vkontakte table td {
+  background: $blue2-color !important;
+  border-color: $blue2-color;
+}
+
+table.button.youtube table td {
+  background: $red-color !important;
+  border-color: $red-color;
+}
+

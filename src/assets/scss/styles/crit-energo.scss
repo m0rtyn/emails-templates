@@ -1,0 +1,129 @@
+@import 'settings';
+@import 'foundation-emails';
+@import 'template/template';
+
+
+
+//PREHEADER=============================================================================================================
+.preheader th{
+  background-color: #9DBDC6 !important;
+  color: white;
+  font-size: 12px;
+}
+
+
+//HEADER================================================================================================================
+.wrapper-inner {
+  padding: 0 !important
+}
+
+
+//BODY=================================================================================================================
+.product-photo {
+  width: 100px !important;
+}
+th.callout-inner {
+  border: none;
+}
+.extra-link {
+  color: $red-color !important;
+  font-weight: bold !important;
+  text-decoration: underline;
+  font-size: 12px;
+}
+p.over-button-text {
+  color: $dark-color !important;
+  font-weight: bold !important;
+}
+.under-button-text {
+  color: $blue2-color !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+table.button.button-alt table td{
+  background-color: $light-color !important;
+  border: 1px solid $red-color !important;
+}
+table.button.button-alt table td a {
+  color: $red-color !important;
+}
+
+//TABLE=================================================================================================================
+.table td {
+  text-align: center;
+  height: 25px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.table__column-title {
+  height: 40px;
+  border: 1px solid $blue2-color;
+  border-top: none;
+  font-weight: bold;
+  text-align: center;
+}
+.table__column-title_left-edge {
+  border-left: none;
+}
+.table__column-title_right-edge {
+  border-right: none;
+}
+.table__column-title_image {
+  width: 75px;
+  margin: auto;
+  padding: 5px;
+}
+.table__row-title {
+  font-weight: bold;
+  text-align: center;
+  border-right: 1px solid $blue2-color;
+  vertical-align: middle;
+  background-color: $light-color;
+}
+.table__row_odd-row {
+  background-color: white;
+}
+
+
+//ADVANTAGES============================================================================================================
+.advantages__list {
+  list-style-type: square;
+  color: $red-color;
+}
+.advantages__title {
+  color: $blue2-color;
+  font-weight: bold;
+}
+.advantages__list__item-text {
+  color: $dark-color;
+  font-size: 18px;
+}
+.contacts-block__title {
+  font-weight: bold;
+  font-size: 14px;
+}
+.contacts-block__text {
+  color: white;
+  font-size: 14px;
+}
+.contacts-block__link {
+  color: $light-color !important;
+  text-decoration: underline;
+  font-size: 13px;
+}
+.contacts-block__address {
+  font-size: 12px;
+  margin-bottom: auto;
+}
+.callout {
+  margin-bottom: auto !important;
+}
+
+//FOOTER================================================================================================================
+.unsubscribe-block {
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+.mailto-link {
+  text-decoration: underline;
+}
