@@ -13,7 +13,11 @@
 
 //BODY=================================================================================================================
 .product-photo {
-  width: 500px !important;
+  width: 200px !important;
+}
+.telephone {
+  color: $blue2-color !important;
+  text-decoration: underline;
 }
 th.callout-inner {
   border: none;
@@ -24,7 +28,6 @@ th.callout-inner {
   text-decoration: underline;
   font-size: 12px;
 }
-
 
 
 //TABLE=================================================================================================================
