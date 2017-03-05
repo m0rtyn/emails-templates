@@ -6,8 +6,8 @@
 
 //PREHEADER=============================================================================================================
 .preheader th{
-  background-color: #9DBDC6 !important;
-  color: white;
+  background-color: $light-color !important;
+  color: $dark-color;
   font-size: 12px;
   padding: 4px !important;
 }
@@ -20,13 +20,11 @@
 
 
 //BODY=================================================================================================================
-.main-border {
-  border-left: 2px solid #9DBDC6;
-  border-right: 2px solid #9DBDC6;
-}
-
-.product-photo {
+.photo {
   width: 200px !important;
+  height: 200px !important;
+  background-color: $light-color;
+  border-radius: 100%;
 }
 th.callout-inner {
   border: none;
@@ -42,7 +40,7 @@ p.over-button-text {
   font-weight: bold !important;
 }
 .under-button-text {
-  color: $blue2-color !important;
+  color: $blue-color !important;
   font-size: 14px !important;
   font-weight: bold !important;
 }
@@ -63,7 +61,7 @@ table.button.button-alt table td a {
 }
 .table__column-title {
   height: 40px;
-  border: 1px solid $blue2-color;
+  border: 1px solid $blue-color;
   border-top: none;
   font-weight: bold;
   text-align: center;
@@ -82,7 +80,7 @@ table.button.button-alt table td a {
 .table__row-title {
   font-weight: bold;
   text-align: center;
-  border-right: 1px solid $blue2-color;
+  border-right: 1px solid $blue-color;
   vertical-align: middle;
   background-color: $light-color;
 }
@@ -97,7 +95,7 @@ table.button.button-alt table td a {
   color: $red-color;
 }
 .advantages__title {
-  color: $blue2-color;
+  color: $blue-color;
   font-weight: bold;
 }
 .advantages__list__item-text {

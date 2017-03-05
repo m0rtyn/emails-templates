@@ -9,6 +9,7 @@
   background-color: #9DBDC6 !important;
   color: white;
   font-size: 12px;
+  padding: 4px !important;
 }
 
 
@@ -19,8 +20,13 @@
 
 
 //BODY=================================================================================================================
+.main-border {
+  border-left: 2px solid #9DBDC6;
+  border-right: 2px solid #9DBDC6;
+}
+
 .product-photo {
-  width: 100px !important;
+  width: 200px !important;
 }
 th.callout-inner {
   border: none;
@@ -126,4 +132,15 @@ table.button.button-alt table td a {
 }
 .mailto-link {
   text-decoration: underline;
+}
+.footer-background.under-button-text {
+  padding: 1rem;
+  background-color: #9DBDC6 !important;
+  color: white !important;
+  margin-bottom: 0;
+}
+
+.footer-background.under-button-text > a {
+  color: white !important;
+  font-weight: bold;
 }
