@@ -7,9 +7,12 @@
 //PREHEADER=============================================================================================================
 .preheader th{
   background-color: $light-color !important;
-  color: $dark-color;
-  font-size: 12px;
   padding: 4px !important;
+}
+.preheader p {
+  color: $dark-color !important;
+  font-size: 12px !important;
+  margin-bottom: 0;
 }
 
 
@@ -20,6 +23,10 @@
 
 
 //BODY=================================================================================================================
+.text-valign {
+  vertical-align: middle;
+}
+
 .photo {
   width: 200px !important;
   height: 200px !important;
