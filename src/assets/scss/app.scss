@@ -3,28 +3,23 @@
 @import 'template/template';
 
 
-
-//PREHEADER=============================================================================================================
-.preheader th{
-  background-color: $light-color !important;
-  color: $dark-color;
-  font-size: 12px;
-  padding: 4px !important;
-}
-
-
 //HEADER================================================================================================================
+.overhead-title th {
+  font-size: 12px;
+  padding: 2px;
+}
 .wrapper-inner {
   padding: 0 !important
 }
 
-
 //BODY=================================================================================================================
-.photo {
-  width: 200px !important;
-  height: 200px !important;
-  background-color: $light-color;
-  border-radius: 100%;
+img.product-photo.qwerty {
+  width: 300px !important;
+  margin-right: 0;
+}
+.telephone {
+  color: $blue2-color !important;
+  text-decoration: underline;
 }
 th.callout-inner {
   border: none;
@@ -35,22 +30,7 @@ th.callout-inner {
   text-decoration: underline;
   font-size: 12px;
 }
-p.over-button-text {
-  color: $dark-color !important;
-  font-weight: bold !important;
-}
-.under-button-text {
-  color: $blue-color !important;
-  font-size: 14px !important;
-  font-weight: bold !important;
-}
-table.button.button-alt table td{
-  background-color: $light-color !important;
-  border: 1px solid $red-color !important;
-}
-table.button.button-alt table td a {
-  color: $red-color !important;
-}
+
 
 //TABLE=================================================================================================================
 .table td {
@@ -61,10 +41,11 @@ table.button.button-alt table td a {
 }
 .table__column-title {
   height: 40px;
-  border: 1px solid $blue-color;
+  border: 1px solid $blue2-color;
   border-top: none;
   font-weight: bold;
   text-align: center;
+  font-size: 13px !important;
 }
 .table__column-title_left-edge {
   border-left: none;
@@ -80,7 +61,7 @@ table.button.button-alt table td a {
 .table__row-title {
   font-weight: bold;
   text-align: center;
-  border-right: 1px solid $blue-color;
+  border-right: 1px solid $blue2-color;
   vertical-align: middle;
   background-color: $light-color;
 }
@@ -89,18 +70,19 @@ table.button.button-alt table td a {
 }
 
 
+
 //ADVANTAGES============================================================================================================
 .advantages__list {
   list-style-type: square;
   color: $red-color;
 }
 .advantages__title {
-  color: $blue-color;
+  color: $blue2-color;
   font-weight: bold;
 }
 .advantages__list__item-text {
   color: $dark-color;
-  font-size: 18px;
+  font-size: 14px;
 }
 .contacts-block__title {
   font-weight: bold;
@@ -125,20 +107,5 @@ table.button.button-alt table td a {
 
 //FOOTER================================================================================================================
 .unsubscribe-block {
-  font-size: 14px !important;
-  font-weight: bold !important;
-}
-.mailto-link {
-  text-decoration: underline;
-}
-.footer-background.under-button-text {
-  padding: 1rem;
-  background-color: #9DBDC6 !important;
-  color: white !important;
-  margin-bottom: 0;
-}
-
-.footer-background.under-button-text > a {
-  color: white !important;
-  font-weight: bold;
+  font-size: 12px !important;
 }
