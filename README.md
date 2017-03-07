@@ -1,5 +1,14 @@
 # Foundation for Emails Template
 
+**Скрытый пиксель**
+-------
+**Полный идентификатор:**
+
+*\<img src="assets/img/0.gif" alt="pixel" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto">*
+
+Прописан сразу после тега \<body>
+
+
 [![devDependency Status](https://david-dm.org/zurb/foundation-emails-template/dev-status.svg)](https://david-dm.org/zurb/foundation-emails-template#info=devDependencies)
 
 **Please open all issues with this template on the main [Foundation for Emails](http://github.com/zurb/foundation-emails/issues) repo.**
