@@ -1,11 +1,12 @@
 var nodemailer = require('nodemailer');
 const MongoClient = require('mongodb').MongoClient;
+const ObjectID = require('mongodb').ObjectID;
 const fs = require('fs');
 let url = 'mongodb://localhost:27017/mailsender';
 
 let config = {
     group: '2',
-    size: 1,
+    size: 4,
     text: 'plain-text/zatvory.txt',
     html: 'indexes/zatvory.html',
     subject: 'Затворы по сниженным ценам ➡️ Дисковые затворы оптом из Китая'
@@ -39,6 +40,7 @@ function findRecipients(db, callback) {
     contacts_collection = db.collection('contacts');
     contacts_collection.find({
         "fields.group": config.group,
+        "status" : "subscriber",
         activities: {$size: config.size}}).toArray(function (err, list) {
         console.log(`будет отправлено ${list.length}`);
         callback(list);
@@ -51,15 +53,16 @@ function sendToList(list, transporter, db) {
     sendAsync(0);
     function sendAsync(offset){
         if (offset == list.length) return console.log('done!');
+        let _id = ObjectID(list[offset]._id).str;
         let mailOptions = {
             headers: {
-                "List-Unsubscribe": "<http://prodazha-optom.ru/unsubscribe/7891212387>"
+                "List-Unsubscribe": `<http://prodazha-optom.ru/unsubscribe/${_id}>`
             },
             from: '"ТД Армасети" <sale@prodazha-optom.ru>', // sender address
             to: list[offset].email, // list of receivers
             subject: config.subject,
-            text: template(text, {email: list[offset].email}),// Subject line {email: item.email}
-            html: template(html, {email: list[offset].email}) // html body
+            text: template(text, {email: list[offset].email, unsub: `http://prodazha-optom.ru/unsubscribe/${_id}`}),// Subject line {email: item.email}
+            html: template(html, {email: list[offset].email, unsub: `http://prodazha-optom.ru/unsubscribe/${_id}`}) // html body
         };
         transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
