@@ -14,11 +14,11 @@ let transporter = nodemailer.createTransport({
 });
 
 // setup email data with unicode symbols
-let pathToHtml = 'indexes/zatvory.html';
+let pathToHtml = 'dist/index.html';
 let mailOptions = {
     from: '"Володя" <supportnoob@mail.ru>', // sender address
-    to: 'web-q1fm0@mail-tester.com', // list of receivers
-    subject: 'тест затворы', // Subject line
+    to: 'poll-788@yandex.ru', // list of receivers
+    subject: 'тест метаданных google', // Subject line
     text: 'тест', // plain text body
     html: fs.readFileSync(pathToHtml, 'utf8')
 };

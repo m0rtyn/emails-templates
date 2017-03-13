@@ -14,10 +14,14 @@
 
 
 //BODY=================================================================================================================
-img.product-photo.qwerty {
-  width: 300px !important;
-  margin-right: 0;
+.secondary-title {
+  margin-bottom: 8px;
+  font-size: 20px !important;
 }
+.title-accent {
+  color: $red-color;
+}
+
 .telephone {
   color: $blue2-color !important;
   text-decoration: underline;
