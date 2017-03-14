@@ -33,7 +33,7 @@ MongoClient.connect(url, function (err, db) {
         });
     });
 });
-//ObjectId("58c1110ccd9d47c1f1940a29")
+
 function findRecipients(db, callback) {
     contacts_collection = db.collection('contacts');
     campaign_collection = db.collection('campaign');
@@ -89,7 +89,7 @@ function sendToList(list, transporter, db, campaignID) {
                 db.collection('contacts').updateOne({email:list[offset].email}, {
                     $push: {
                         activities: {
-                            action: 'send',
+                            action: 'queued',
                             target: campaignID,
                             timestamp: new Date()
                         }
