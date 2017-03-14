@@ -5,19 +5,16 @@ const fs = require('fs');
 let url = 'mongodb://localhost:27017/mailsender';
 
 let config = {
-    group: 'test',
-    size: 3,
-    text: 'plain-text/welcome.txt',
-    html: 'indexes/welcome.html',
-    subject: 'Затворы по сниженным ценам ➡️ Дисковые затворы оптом из Китая',
-    titleInDB : 'Приветствующее письмо'
+    group: '2',
+    text: 'plain-text/flancy.txt',
+    html: 'indexes/flancy.html',
+    subject: 'Стальные фланцы из первых рук!',
+    titleInDB : 'Стальные фланцы из первых рук!'
 };
 
 function createTransport(callback) {
     let transporter = nodemailer.createTransport({
         name: 'prodazha-optom.ru',
-        maxConnections: 50,
-        maxMessages: 10,
         pool: true,
         port: 587,
         auth: {
@@ -36,7 +33,7 @@ MongoClient.connect(url, function (err, db) {
         });
     });
 });
-
+//ObjectId("58c1110ccd9d47c1f1940a29")
 function findRecipients(db, callback) {
     contacts_collection = db.collection('contacts');
     campaign_collection = db.collection('campaign');
@@ -45,11 +42,12 @@ function findRecipients(db, callback) {
             contacts_collection.find({
                 "fields.group": config.group,
                 "status": "subscriber",
-                activities: {$size: config.size}
+                "activities.target": {
+                    $ne: campaign._id
+                }
             }).toArray(function (err, list) {
                 console.log(`будет отправлено ${list.length}`);
-                let campaignID = campaign._id.toString();
-                callback(list, campaignID);
+                callback(list, campaign._id);
             });
 
         } else {
@@ -66,10 +64,12 @@ function sendToList(list, transporter, db, campaignID) {
         if (offset == list.length) return console.log('done!');
         let _id = list[offset]._id.toString();
         let email = template(html, {email: list[offset].email, unsub: `http://prodazha-optom.ru/unsubscribe/${_id}`});
-        email = addPixel(email,campaignID, _id );
+        email = addPixel(email,campaignID.toString(), _id );
         let mailOptions = {
             headers: {
-                "List-Unsubscribe": `<http://prodazha-optom.ru/unsubscribe/${_id}>`
+                "List-Unsubscribe": `<http://prodazha-optom.ru/unsubscribe/${_id}>`,
+                "X-User-ID": _id,
+                "X-Campaign-ID": campaignID.toString()
             },
             from: '"ТД Армасети" <sale@prodazha-optom.ru>', // sender address
             to: list[offset].email, // list of receivers
@@ -81,8 +81,8 @@ function sendToList(list, transporter, db, campaignID) {
             if (error) {
                 console.error(`error, try reload [${list[offset].email}] \t\t ${offset} from ${list.length}`);
                 return createTransport(function (transporter) {
-                    findRecipients(db, function (list) {
-                        sendToList(list, transporter, db);
+                    findRecipients(db, function (list, campaignID) {
+                        sendToList(list, transporter, db, campaignID);
                     });
                 });
             } else {
@@ -90,7 +90,7 @@ function sendToList(list, transporter, db, campaignID) {
                     $push: {
                         activities: {
                             action: 'send',
-                            target: config.subject,
+                            target: campaignID,
                             timestamp: new Date()
                         }
                     }
