@@ -12,11 +12,16 @@
   padding: 0 !important
 }
 
+
 //BODY=================================================================================================================
-img.product-photo {
-  width: 200px !important;
-  margin-right: 0;
+.secondary-title {
+  margin-bottom: 8px;
+  font-size: 20px !important;
 }
+.title-accent {
+  color: $red-color;
+}
+
 .telephone {
   color: $blue2-color !important;
   text-decoration: underline;
@@ -64,7 +69,6 @@ th.callout-inner {
   border-right: 1px solid $blue2-color;
   vertical-align: middle;
   background-color: $light-color;
-  width: 25%;
 }
 .table__row_odd-row {
   background-color: white;
