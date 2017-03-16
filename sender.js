@@ -59,22 +59,23 @@ function findRecipients(db, callback) {
 function sendToList(list, transporter, db, campaignID) {
     let text = fs.readFileSync(config.text, 'utf8');
     let html = fs.readFileSync(config.html, 'utf8');
+    let _campaignID = campaignID.toString();
     sendAsync(0);
     function sendAsync(offset){
         if (offset == list.length) return console.log('done!');
         let _id = list[offset]._id.toString();
-        let email = template(html, {email: list[offset].email, unsub: `http://prodazha-optom.ru/unsubscribe/${_id}`});
-        email = addPixel(email,campaignID.toString(), _id );
+        let email = template(html, {email: list[offset].email, unsub: `http://prodazha-optom.ru/unsubscribe/${_id}/${_campaignID}`});
+        email = addPixel(email,_campaignID, _id );
         let mailOptions = {
             headers: {
-                "List-Unsubscribe": `<http://prodazha-optom.ru/unsubscribe/${_id}>`,
+                "List-Unsubscribe": `<http://prodazha-optom.ru/unsubscribe/${_id}/${_campaignID}>`,
                 "X-User-ID": _id,
-                "X-Campaign-ID": campaignID.toString()
+                "X-Campaign-ID": _campaignID
             },
             from: '"ТД Армасети" <sale@prodazha-optom.ru>', // sender address
             to: list[offset].email, // list of receivers
             subject: config.subject,
-            text: template(text, {email: list[offset].email, unsub: `http://prodazha-optom.ru/unsubscribe/${_id}`}),// Subject line {email: item.email}
+            text: template(text, {email: list[offset].email, unsub: `http://prodazha-optom.ru/unsubscribe/${_id}/${_campaignID}`}),// Subject line {email: item.email}
             html: email // html body
         };
         transporter.sendMail(mailOptions, function (error, info) {
