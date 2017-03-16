@@ -14,22 +14,9 @@
 
 
 //BODY=================================================================================================================
-img[alt="picture"] {
-  width: 200px !important;
+img[alt="Чугунные вентили"] {
+  width: 400px;
 }
-img[alt="picture-small"] {
-  width: 150px !important;
-  margin-bottom: 16px;
-}
-img[alt="photo"] {
-  width: 200px !important;
-  border: 1px solid $red-color;
-}
-img[alt="wide-photo"] {
-  width: 400px !important;
-  border: 1px solid $red-color;
-}
-
 .secondary-title {
   margin-bottom: 8px;
   font-size: 20px !important;
@@ -37,9 +24,7 @@ img[alt="wide-photo"] {
 .title-accent {
   color: $red-color;
 }
-.video-preview {
-  border: 3px solid $red-color;
-}
+
 .telephone {
   color: $blue2-color !important;
   text-decoration: underline;
