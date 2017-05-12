@@ -15,11 +15,17 @@
 
 //BODY=================================================================================================================
 
-//img[alt="products"] {
-//  width: 520px !important;
-//}
-.paragraph {
-  font-size: 15px;
+.dashed-box {
+  border: 3px dashed $dark-color;
+  padding: 8px 16px 8px 16px;
+}
+
+.red-text {
+  color: $red-color;
+}
+.contacts-block__text {
+  color: white;
+  font-size: 14px;
 }
 
 .secondary-title {
@@ -49,7 +55,8 @@ th.callout-inner {
 
 //TABLE=================================================================================================================
 .table td {
-  text-align: center;
+  padding-left: 32px;
+  text-align: left;
   height: 25px;
   vertical-align: middle;
   font-size: 14px;
