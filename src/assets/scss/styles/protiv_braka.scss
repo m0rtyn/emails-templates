@@ -15,11 +15,19 @@
 
 //BODY=================================================================================================================
 img[alt="picture"] {
-  width: 260px !important;
+  width: 200px !important;
 }
-img[alt="exclusive products"] {
-  width: 520px !important;
-  border: 1px solid $dark-color;
+img[alt="picture-small"] {
+  width: 150px !important;
+  margin-bottom: 16px;
+}
+img[alt="photo"] {
+  width: 200px !important;
+  border: 1px solid $red-color;
+}
+img[alt="wide-photo"] {
+  width: 400px !important;
+  border: 1px solid $red-color;
 }
 
 .secondary-title {
