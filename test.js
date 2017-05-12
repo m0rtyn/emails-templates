@@ -18,8 +18,8 @@ let pathToHtml = 'dist/index.html';
 let pathToTxt = 'plain-text/30s41nzh.txt';
 let mailOptions = {
     from: '"Володя" <supportnoob@mail.ru>', // sender address
-    to: 'zogacc@gmail.com', // list of receivers
-    subject: 'ТЕСТ письма с эксклюзивными позициями', // Subject line
+    to: 'poll-78@yandex.ru ', // list of receivers
+    subject: 'ТЕСТ письма с обратными чугунными клапанами', // Subject line
     text: fs.readFileSync(pathToTxt, 'utf8'),
     html: fs.readFileSync(pathToHtml, 'utf8')
 };
