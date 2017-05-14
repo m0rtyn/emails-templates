@@ -14,15 +14,23 @@
 
 
 //BODY=================================================================================================================
-
-.dashed-box {
-  border: 3px dashed $dark-color;
-  padding: 8px 16px 8px 16px;
+img[alt="animation"] {
+  display: inline;
 }
 
-.red-text {
-  color: $red-color;
+.to-youtube {
+  border: 3px solid #E62117;
+  width: 300px;
 }
+
+.price-button {
+  vertical-align: middle;
+}
+
+img[alt="centrifugal"] {
+  width: 270px;
+}
+
 .contacts-block__text {
   color: white;
   font-size: 14px;
