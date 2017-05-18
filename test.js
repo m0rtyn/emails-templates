@@ -5,21 +5,30 @@ const fs = require('fs');
 
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
-    host: 'smtp.mail.ru',
+    host: 'gidroteh-expert.ru',
     port: 465,
+    pool: true,
+    secure: true, // use TLS
     auth: {
-        user: 'supportnoob@mail.ru',
-        pass: 'bravenewpassw0rd'
+        user: 'user1',
+        pass: 'password1'
+    },
+    tls: {
+        // do not fail on invalid certs
+        rejectUnauthorized: false
     }
+
 });
 
+
+
 // setup email data with unicode symbols
-let pathToHtml = 'indexes/kak_v_kitai_ezdili.html';
+let pathToHtml = 'indexes/klapany_obratnye_chugunnye.html';
 let pathToTxt = 'plain-text/klapany_obratnye_chugunnye.txt';
 let mailOptions = {
-    from: '"Володя" <supportnoob@mail.ru>', // sender address
-    to: 'zogacc@gmail.com', // list of receivers
-    subject: 'ТЕСТ письма с клапаны', // Subject line
+    from: '"Володя" <volodya@gidroteh-expert.ru>', // sender address
+    to: 'lebedko.alexander@gmail.com', // list of receivers
+    subject: 'Клапаны чугунные из Китая в на складе', // Subject line
     text: fs.readFileSync(pathToTxt, 'utf8'),
     html: fs.readFileSync(pathToHtml, 'utf8')
 };
