@@ -5,7 +5,7 @@ const fs = require('fs');
 
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
-    host: 'gidroteh-expert.ru',
+    host: 'smtp.prodazha-optom.ru',
     port: 465,
     pool: true,
     secure: true, // use TLS
@@ -23,12 +23,12 @@ let transporter = nodemailer.createTransport({
 
 
 // setup email data with unicode symbols
-let pathToHtml = 'indexes/klapany_obratnye_chugunnye.html';
-let pathToTxt = 'plain-text/klapany_obratnye_chugunnye.txt';
+let pathToHtml = 'dist/index.html';
+let pathToTxt = 'plain-text/bolshie_diametry.txt';
 let mailOptions = {
-    from: '"Володя" <volodya@gidroteh-expert.ru>', // sender address
-    to: 'lebedko.alexander@gmail.com', // list of receivers
-    subject: 'Клапаны чугунные из Китая в на складе', // Subject line
+    from: '"Володя" <pidr@prodazha-optom.ru>', // sender address
+    to: 'zogacc@gmail.com, afro.funky.lover@gmail.com', // list of receivers
+    subject: 'Где выгодно купить большие диаметры запорной арматуры и элементов трубопровода?', // Subject line
     text: fs.readFileSync(pathToTxt, 'utf8'),
     html: fs.readFileSync(pathToHtml, 'utf8')
 };

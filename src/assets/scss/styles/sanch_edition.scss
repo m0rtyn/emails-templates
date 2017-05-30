@@ -1,0 +1,89 @@
+@import 'settings';
+@import 'template/template';
+@import 'foundation-emails';
+
+//PREHEAD
+th .prehead-title{
+  color: white !important;
+}
+//HEADER================================================================================================================
+img[alt="logo"] {
+  width: 150px;
+}
+th.columns {
+  valign: middle
+}
+.overhead-title th {
+  font-size: 12px;
+  padding: 2px;
+}
+.wrapper-inner {
+  padding: 0 !important
+}
+
+//BODY=================================================================================================================
+.telephone {
+  color: $blue2-color !important;
+  text-decoration: underline;
+}
+th.callout-inner {
+  border: none;
+}
+.extra-link {
+  color: $red-color !important;
+  font-weight: bold !important;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+
+//TABLE=================================================================================================================
+.table td {
+  text-align: center;
+  height: 25px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.table__column-title {
+  height: 40px;
+  border: 1px solid $blue2-color;
+  border-top: none;
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px !important;
+}
+.table__column-title_left-edge {
+  border-left: none;
+}
+.table__column-title_right-edge {
+  border-right: none;
+}
+.table__column-title_image {
+  width: 75px;
+  margin: auto;
+  padding: 5px;
+}
+.table__row-title {
+  font-weight: bold;
+  text-align: center;
+  border-right: 1px solid $blue2-color;
+  vertical-align: middle;
+  background-color: $light-color;
+}
+.table__row_odd-row {
+  background-color: white;
+}
+
+//ADVANTAGES============================================================================================================
+.advantages__title {
+  color: $blue2-color;
+  font-weight: bold;
+}
+.advantages__list__item-text {
+  color: $dark-color;
+  font-size: 14px;
+}
+//FOOTER================================================================================================================
+.unsubscribe-block {
+  font-size: 12px !important;
+}

@@ -22,10 +22,10 @@ $red-color: #e54a3b;
 $blue2-color: #237bb3;
 $blue1-color: #3295d7;
 
-$primary-color: #e54a3b;
-$secondary-color: #3295d7;
-$success-color: #e54a3b; //кнопка целевого действия
-$warning-color: #3295d7; //кнопка вторичного целевого действия
+$primary-color: #2199e8;
+$secondary-color: #777777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
 $alert-color: #ec5840;
 $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
@@ -33,7 +33,7 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $pre-color: #ff6908;
-$global-width: 580px;
+$global-width: 600px;
 $global-width-small: 95%;
 $global-gutter: 16px;
 $body-background: white;
@@ -68,15 +68,15 @@ $global-line-height: 1.3;
 $global-font-size: 16px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
-$header-font-weight: bold;
+$header-font-weight: $global-font-weight;
 $h1-font-size: 32px;
 $h2-font-size: 28px;
 $h3-font-size: 24px;
 $h4-font-size: 20px;
 $h5-font-size: 18px;
 $h6-font-size: 16px;
-$header-margin-bottom: 16px;
-$paragraph-margin-bottom: 16px;
+$header-margin-bottom: 12px;
+$paragraph-margin-bottom: 12px;
 $small-font-size: 80%;
 $small-font-color: $medium-gray;
 $lead-font-size: $global-font-size * 1.25;
@@ -89,7 +89,7 @@ $subheader-margin-top: 4px;
 $subheader-margin-bottom: 8px;
 $hr-width: $global-width;
 $hr-border: 1px solid black;
-$hr-margin: 24px auto;
+$hr-margin: 20px auto;
 $anchor-text-decoration: none;
 $anchor-color: $blue2-color;
 $anchor-color-visited: $anchor-color;
@@ -103,7 +103,7 @@ $stat-font-size: 40px;
 $button-padding: (
         tiny: 4px 8px 4px 8px,
         small: 5px 10px 5px 10px,
-        default: 16px 24px 16px 24px,
+        default: 8px 16px 8px 16px,
         large: 10px 20px 10px 20px,
 );
 $button-font-size: (
@@ -114,12 +114,12 @@ $button-font-size: (
 );
 $button-color: white;
 $button-color-alt: $red-color;
-$button-font-weight: normal;
+$button-font-weight: bold;
 $button-margin: 0 0 $global-margin 0;
 $button-background: $red-color;
-$button-background-alt: $blue1-color;
+$button-background-alt: $light-color;
 $button-border: 2px solid $button-background;
-$button-border-alt: 2px solid $button-background-alt;
+$button-border-alt: 2px solid $red-color;
 $button-radius: $global-radius;
 $button-rounded: $global-rounded;
 

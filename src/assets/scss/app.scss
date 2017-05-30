@@ -2,25 +2,160 @@
 @import 'foundation-emails';
 @import 'template/template';
 
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .header__social-icons,  .header_contacts {
+    float: none !important;
+    margin: 0 !important;
+  }
+  a[href="tel:+73832923684"], a[href="mailto:sale@prodazha-optom.ru"] {
+    float: none !important;
+  }
+  .youtube-icon, .vk-icon {
+    display: none !important;
+  }
+  td > table.container, table.body .container {
+    width: 100% !important;
+  }
+  th.footer.small-12.large-12.columns.first.last {
+    padding: 0 !important;
+  }
+  p.unsubscribe-block {
+    font-size: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-//BODY=================================================================================================================
-.header {
-  background-color: $dark-color;
-  h1 {
+}
+
+
+//ROOT
+.wrapper-inner {
+  padding: 0 !important
+}
+//HEADER================================================================================================================
+.overhead-title {
+  height: 24px;
+  line-height: 24px;
+  font-size: 10px;
+  visibility: hidden;
+}
+.header__social-icons {
+  margin-left: 48px;
+}
+  .vk-icon, .youtube-icon {
+    display: inline;
+    margin-right: 16px;
+  }
+.header_contacts {
+  margin-right: 48px;
+}
+  a[href="tel:+73832923684"], a[href="mailto:sale@prodazha-optom.ru"] {
     color: white;
-    margin-bottom: 0;
+    display: block;
+    font-weight: bold;
     font-size: 14px;
+    float: right;
+    &:visited {
+      color: white;
+    }
+  }
+  .header__logo {
+    margin-top: 16px !important;
+    margin-bottom: 48px !important;
+  }
+//BODY=================================================================================================================
+.typography {
+  padding-left: 48px !important;
+  padding-right: 48px !important;
+  font-size: 14px !important;
+}
+
+
+//TABLE=================================================================================================================
+.table td {
+  height: 25px;
+  vertical-align: middle;
+  font-size: 16px;
+  padding-left: 16px;
+}
+.table__column-title {
+  height: 40px;
+  border-right: 1px solid $blue2-color;
+  font-weight: bold;
+  font-size: 16px !important;
+  padding-left: 16px;
+}
+.table__column-title_left-edge {
+  border-left: none;
+}
+.table__column-title_right-edge {
+  border-right: none;
+}
+.table__column-title_image {
+  width: 75px;
+  margin: auto;
+  padding: 5px;
+}
+.table__row-title {
+  height: 40px;
+  font-size: 16px !important;
+  vertical-align: middle;
+  td {
+    font-weight: bold !important;
   }
 }
-
-.heading {
-  font-size: 14px;
+.table__row_odd-row {
+  background-color: #ededed;
 }
 
-.from, .source, .subject {
+
+
+//ADVANTAGES============================================================================================================
+h4 > span {
+  color: $blue1-color;
+}
+.advantages__list {
+  list-style-type: none;
+  padding: 0 !important;
   font-size: 14px;
 }
+.advantages__title {
+  color: $blue2-color;
+  font-weight: bold;
+}
+.advantages__list__item-text {
+  color: $dark-color;
+  font-size: 14px;
+}
+.contacts-block__title {
+  font-weight: bold;
+  font-size: 14px;
+}
+.contacts-block__text {
+  color: white;
+  font-size: 14px;
+}
+.contacts-block__link {
+  color: $light-color !important;
+  text-decoration: underline;
+  font-size: 13px;
+}
+.contacts-block__address {
+  font-size: 12px;
+  margin-bottom: auto;
+}
+.callout {
+  margin-bottom: auto !important;
+}
 
-.body {
-  background-color: white;
+//FOOTER================================================================================================================
+th.footer.small-12.large-12.columns.first.last {
+  padding: 0 !important;
+}
+.unsubscribe-block {
+  font-size: 14px !important;
+  color: #BBBBBB !important;
+  a {
+    border-bottom: 1px solid #BBBBBB;
+  }
 }
