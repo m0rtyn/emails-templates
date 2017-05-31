@@ -2,21 +2,21 @@ var nodemailer = require('nodemailer');
 const fs = require('fs');
 
 let transporter = nodemailer.createTransport({
-        host: 'smtp.prodazha-optom.ru',
-        port: 465,
-        pool: true,
-        secure: true, // use TLS
-        auth: {
-            user: 'abuse@prodazha-optom.ru',
-            pass: 'password1'
-        },
-        tls: {
-            // do not fail on invalid certs
-            rejectUnauthorized: false
-        }
-    });
+    host: 'smtp.prodazha-optom.ru',
+    port: 465,
+    pool: true,
+    secure: true, // use TLS
+    auth: {
+        user: 'abuse@prodazha-optom.ru',
+        pass: 'password1'
+    },
+    tls: {
+        // do not fail on invalid certs
+        rejectUnauthorized: false
+    }
+});
 
-let email = 'ruslan.armaseti@yandex.ru';
+let email = 'zogacc@gmail.com';
 let htmlPath = 'dist/index.html';
 let txtPath = 'plain-text/bolshie_diametry.txt';
 
@@ -34,7 +34,7 @@ let mailOptions = {
         to : email
     },
     replyTo : '"ТД Армасети" <sale@prodazha-optom.ru>',
-    text: template(fs.readFileSync('plain-text/bolshie_diametry.txt', 'utf8'), {
+    text: template(fs.readFileSync(txtPath, 'utf8'), {
         email: email,
         unsub: `http://prodazha-optom.ru/unsubscribe/447447574654/58675865`
     }),// Subject line {email: item.email}

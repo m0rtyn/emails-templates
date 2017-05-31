@@ -4,17 +4,16 @@
 
 @media only screen and (max-width: #{$global-breakpoint}) {
   .header__social-icons,  .header_contacts {
-    float: none !important;
     margin: 0 !important;
   }
-  a[href="tel:+73832923684"], a[href="mailto:sale@prodazha-optom.ru"] {
-    float: none !important;
-  }
+  //a[href="tel:+73832923684"], a[href="mailto:sale@prodazha-optom.ru"] {
+
   .youtube-icon, .vk-icon {
     display: none !important;
   }
   td > table.container, table.body .container {
     width: 100% !important;
+    margin: 0;
   }
   th.footer.small-12.large-12.columns.first.last {
     padding: 0 !important;
@@ -38,23 +37,26 @@
   line-height: 24px;
   font-size: 10px;
   visibility: hidden;
+  color: #595E9D;
 }
 .header__social-icons {
   margin-left: 48px;
 }
   .vk-icon, .youtube-icon {
     display: inline;
+    //float: left;
     margin-right: 16px;
   }
 .header_contacts {
+  text-align: right;
   margin-right: 48px;
 }
   a[href="tel:+73832923684"], a[href="mailto:sale@prodazha-optom.ru"] {
     color: white;
-    display: block;
+    //display: block;
     font-weight: bold;
     font-size: 14px;
-    float: right;
+    //float: right;
     &:visited {
       color: white;
     }
