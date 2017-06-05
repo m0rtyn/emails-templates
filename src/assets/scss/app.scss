@@ -6,12 +6,10 @@
   .header__social-icons,  .header_contacts {
     margin: 0 !important;
   }
-  //a[href="tel:+73832923684"], a[href="mailto:sale@prodazha-optom.ru"] {
-
   .youtube-icon, .vk-icon {
     display: none !important;
   }
-  td > table.container, table.body .container {
+  td table.container, table.body .container {
     width: 100% !important;
     margin: 0;
   }
@@ -74,43 +72,32 @@
 
 
 //TABLE=================================================================================================================
-.table td {
-  height: 25px;
-  vertical-align: middle;
+.table {
+  width: auto !important;
   font-size: 16px;
-  padding-left: 16px;
 }
-.table__column-title {
-  height: 40px;
-  border-right: 1px solid $blue2-color;
-  font-weight: bold;
-  font-size: 16px !important;
-  padding-left: 16px;
-}
-.table__column-title_left-edge {
-  border-left: none;
-}
-.table__column-title_right-edge {
-  border-right: none;
-}
-.table__column-title_image {
-  width: 75px;
-  margin: auto;
-  padding: 5px;
-}
-.table__row-title {
-  height: 40px;
-  font-size: 16px !important;
+.table td {
   vertical-align: middle;
-  td {
-    font-weight: bold !important;
+  padding: 8px 24px 8px 16px;
+  span {
+    font-size: 13px;
   }
 }
-.table__row_odd-row {
-  background-color: #ededed;
+.table__column-title {
+  padding: 16px;
+  border-bottom: 1px solid $dark-color
 }
-
-
+//.table__column-title_image {
+//  width: 75px;
+//  margin: auto;
+//  padding: 5px;
+//}
+.table__row-title {
+  vertical-align: middle;
+}
+.table__row_odd-row {
+  //background-color: #ededed;
+}
 
 //ADVANTAGES============================================================================================================
 h4 > span {
