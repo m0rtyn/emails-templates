@@ -16,7 +16,7 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-let email = 'zogacc@gmail.com';
+let email = 'zogacc@gmail.com, web-r5d9y@mail-tester.com';
 let htmlPath = 'dist/index.html';
 let txtPath = 'plain-text/kran_strizh.txt';
 
