@@ -138,6 +138,11 @@ h4 > span {
 }
 
 //FOOTER================================================================================================================
+p.unsubscribe-block a {
+  color: $blue1-color;
+  text-decoration: none;
+  border-bottom: 1px solid #BBBBBB;
+}
 th.footer.small-12.large-12.columns.first.last {
   padding: 0 !important;
 }

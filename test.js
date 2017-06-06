@@ -7,7 +7,7 @@ let transporter = nodemailer.createTransport({
     pool: true,
     secure: true, // use TLS
     auth: {
-        user: 'abuse@prodazha-optom.ru',
+        user: 'user1',
         pass: 'password1'
     },
     tls: {
@@ -16,17 +16,17 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-let email = 'zogacc@gmail.com, web-r5d9y@mail-tester.com';
-let htmlPath = 'dist/index.html';
-let txtPath = 'plain-text/kran_strizh.txt';
+let email = 'zogacc@gmail.com';
+let htmlPath = 'indexes/kran_ld.html';
+let txtPath = 'plain-text/kran_ld.txt';
 
 
 let mailOptions = {
     from: '"ТД Армасети" <sale@prodazha-optom.ru>', // sender address
     to: email, // list of receivers
-    subject: 'subject #3',
+    subject: 'subject #4',
     headers: {
-        "List-Unsubscribe": `<http://prodazha-optom.ru/unsubscribe/447447574654/58675865>`,
+        "List-Unsubscribe": `<http://prodazha-optom.ru/unsubscribe/447447574654/58675865/7tftf65d7rd75d54d>`,
         "list-id" : `test sending`,
     },
     envelope : {
