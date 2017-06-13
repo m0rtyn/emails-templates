@@ -23,9 +23,9 @@ $blue2-color: #237bb3;
 $blue1-color: #3295d7;
 
 $primary-color: #e54a3b;
-$secondary-color: #3295d7;
-$success-color: #e54a3b; //кнопка целевого действия
-$warning-color: #3295d7; //кнопка вторичного целевого действия
+$secondary-color: #999999;
+$success-color: $red-color; //кнопка целевого действия
+$warning-color: $blue1-color; //кнопка вторичного целевого действия
 $alert-color: #ec5840;
 $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
