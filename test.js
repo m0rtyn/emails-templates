@@ -16,7 +16,7 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-let email = 'poll-78@yandex.ru';
+let email = 'zogacc@gmail.com';
 let htmlPath = 'dist/index.html';
 let txtPath = 'plain-text/flancy.txt';
 
