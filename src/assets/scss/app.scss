@@ -3,12 +3,6 @@
 @import 'template/template';
 
 @media only screen and (max-width: #{$global-breakpoint}) {
-  .header__social-icons,  .header_contacts {
-    margin: 0 !important;
-  }
-  .youtube-icon, .vk-icon {
-    display: none !important;
-  }
   td table.container, table.body .container {
     width: 100% !important;
     margin: 0;
@@ -21,7 +15,6 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-
 }
 
 
@@ -30,60 +23,77 @@
   padding: 0 !important
 }
 //HEADER================================================================================================================
-.overhead-title {
-  height: 24px;
-  line-height: 24px;
-  font-size: 10px;
-  visibility: hidden;
-  color: #595E9D;
-}
-.header__social-icons {
-  margin-left: 48px;
-}
-  .vk-icon, .youtube-icon {
-    display: inline;
-    //float: left;
-    margin-right: 16px;
-  }
-.header_contacts {
-  text-align: right;
-  margin-right: 48px;
-}
-  a[href="tel:+73832923684"], a[href="mailto:sale@prodazha-optom.ru"] {
-    color: white;
-    //display: block;
-    font-weight: bold;
-    font-size: 14px;
-    //float: right;
-    &:visited {
-      color: white;
-    }
-  }
-  .header__logo {
-    margin-top: 16px !important;
-    margin-bottom: 48px !important;
-  }
-  .to-youtube {
-    width: 240px;
-    border: 3px solid $red-color;
-    margin-right: 16px;
-  }
-  h6 {
-    margin-bottom: 8px !important;
-  }
-  img[alt="centrifugal"] {
-    width: 240px;
-    margin-left: 16px;
-    margin-bottom: 16px;
-  }
+
 //BODY=================================================================================================================
 .typography {
-  padding-left: 48px !important;
-  padding-right: 48px !important;
-  font-size: 14px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
 }
-.product-photo {
-  width: 140px;
+.galeznik-head {
+  font-size: 12px !important;
+  background-color: #f2f9fd !important;
+  .link {
+    color: #007eff !important;
+  }
+  table.button.tiny {
+    margin: 8px 0 0 0 !important;
+  }
+}
+.online-seminar {
+  span {
+    font-size: 14px !important;
+  }
+  img {
+    margin-bottom: 16px;
+  }
+  .description span{
+    font-size: 12px !important;
+  }
+}
+.speakers img {
+  width: 236px;
+}
+.container.silver tbody tr td {
+  padding: 16px !important;
+  background-color: #f1f1f1 !important;
+  margin: 0 16px;
+  h3 {
+    color: black !important;
+  }
+  .handouts span {
+    text-decoration: underline;
+  }
+  .price {
+    font-size: 18px;
+  }
+}
+.container.gold tbody tr td {
+  padding: 16px !important;
+  background-color: #ffffd1;
+  .price {
+    font-size: 18px;
+    span {
+      text-decoration: line-through;
+      color: gray !important;
+    }
+  }
+}
+
+.container.platinum tbody tr td {
+  padding: 16px !important;
+  background-color: #f2d7ce;
+  .price {
+    font-size: 18px;
+  }
+}
+
+.small-text span {
+  font-size: 11px !important;
+}
+
+.container .row .callout-inner.alert {
+  color: black !important;
+  background-color: #FEE5EE !important;
 }
 
 //TABLE=================================================================================================================
@@ -100,7 +110,7 @@
 }
 .table__column-title {
   padding: 16px;
-  border-bottom: 1px solid $dark-color
+  border-bottom: 1px solid $secondary-color;
 }
 //.table__column-title_image {
 //  width: 75px;
@@ -116,7 +126,7 @@
 
 //ADVANTAGES============================================================================================================
 h4 > span {
-  color: $blue1-color;
+  color: $primary-color;
 }
 .advantages__list {
   list-style-type: none;
@@ -124,11 +134,11 @@ h4 > span {
   font-size: 14px;
 }
 .advantages__title {
-  color: $blue2-color;
+  color: $primary-color;
   font-weight: bold;
 }
 .advantages__list__item-text {
-  color: $dark-color;
+  color: $secondary-color;
   font-size: 14px;
 }
 .contacts-block__title {
@@ -140,7 +150,7 @@ h4 > span {
   font-size: 14px;
 }
 .contacts-block__link {
-  color: $light-color !important;
+  color: white !important;
   text-decoration: underline;
   font-size: 13px;
 }
@@ -153,18 +163,9 @@ h4 > span {
 }
 
 //FOOTER================================================================================================================
-p.unsubscribe-block a {
-  color: $blue1-color;
-  text-decoration: none;
-  border-bottom: 1px solid #BBBBBB;
-}
 th.footer.small-12.large-12.columns.first.last {
   padding: 0 !important;
 }
 .unsubscribe-block {
-  font-size: 14px !important;
-  color: #BBBBBB !important;
-  a {
-    border-bottom: 1px solid #BBBBBB;
-  }
+  font-size: 12px !important;
 }
