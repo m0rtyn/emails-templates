@@ -16,17 +16,14 @@
 // 1. Global
 // ---------
 
-$light-color: #eef2f3;
-$dark-color: #213344;
-$red-color: #e54a3b;
-$blue2-color: #237bb3;
-$blue1-color: #3295d7;
 
-$primary-color: #e54a3b;
-$secondary-color: #999999;
-$success-color: $red-color; //кнопка целевого действия
-$warning-color: $blue1-color; //кнопка вторичного целевого действия
-$alert-color: #ec5840;
+$primary-color: #81c784;
+$secondary-color: #6666AA;
+
+$success-color: #f1f1f1;
+$warning-color: #ffffd1;
+$alert-color: #FEE5EE;
+
 $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -40,7 +37,7 @@ $body-background: white;
 $container-background: white;
 $global-padding: 16px;
 $global-margin: 16px;
-$global-radius: 3px;
+$global-radius: 5px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
 
@@ -48,7 +45,7 @@ $global-breakpoint: $global-width + $global-gutter;
 // -------
 
 $grid-column-count: 12;
-$column-padding-bottom: $global-padding;
+$column-padding-bottom: 16px;
 $container-radius: 0;
 
 // 3. Block Grid
@@ -69,16 +66,16 @@ $global-font-size: 16px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
 $header-font-weight: bold;
-$h1-font-size: 32px;
+$h1-font-size: 46px;
 $h2-font-size: 28px;
-$h3-font-size: 24px;
+$h3-font-size: 22px;
 $h4-font-size: 20px;
 $h5-font-size: 18px;
 $h6-font-size: 16px;
 $header-margin-bottom: 16px;
-$paragraph-margin-bottom: 16px;
-$small-font-size: 80%;
-$small-font-color: $medium-gray;
+$paragraph-margin-bottom: 8px;
+$small-font-size: 14px;
+$small-font-color: black;
 $lead-font-size: $global-font-size * 1.25;
 $lead-line-height: 1.6;
 $text-padding: 12px;
@@ -88,12 +85,12 @@ $subheader-font-weight: $global-font-weight;
 $subheader-margin-top: 4px;
 $subheader-margin-bottom: 8px;
 $hr-width: $global-width;
-$hr-border: 1px solid black;
+$hr-border: 2px solid white;
 $hr-margin: 24px auto;
 $anchor-text-decoration: none;
-$anchor-color: $blue2-color;
+$anchor-color: $secondary-color;
 $anchor-color-visited: $anchor-color;
-$anchor-color-hover: darken($blue2-color, 10%);
+$anchor-color-hover: darken($secondary-color, 10%);
 $anchor-color-active: $anchor-color-hover;
 $stat-font-size: 40px;
 
@@ -101,10 +98,10 @@ $stat-font-size: 40px;
 // ---------
 
 $button-padding: (
-        tiny: 4px 8px 4px 8px,
+        tiny: 4px 16px 4px 16px,
         small: 5px 10px 5px 10px,
-        default: 16px 24px 16px 24px,
-        large: 10px 20px 10px 20px,
+        default: 16px 32px 16px 32px,
+        large: 10px 40px 10px 40px,
 );
 $button-font-size: (
         tiny: 10px,
@@ -113,11 +110,11 @@ $button-font-size: (
         large: 20px,
 );
 $button-color: white;
-$button-color-alt: $red-color;
+$button-color-alt: black;
 $button-font-weight: normal;
 $button-margin: 0 0 $global-margin 0;
-$button-background: $red-color;
-$button-background-alt: $blue1-color;
+$button-background: $primary-color;
+$button-background-alt: $secondary-color;
 $button-border: 2px solid $button-background;
 $button-border-alt: 2px solid $button-background-alt;
 $button-radius: $global-radius;
@@ -126,22 +123,22 @@ $button-rounded: $global-rounded;
 // 6. Callout
 // ----------
 
-$callout-background: $blue1-color;
-$callout-background-fade: 85%;
-$callout-padding: 10px;
+$callout-background: $primary-color;
+$callout-background-fade: 100%;
+$callout-padding: 16px;
 $callout-margin-bottom: $global-margin;
-$callout-border: 1px solid darken($callout-background, 20%);
-$callout-border-secondary: 1px solid darken($secondary-color, 20%);
-$callout-border-success: 1px solid darken($success-color, 20%);
-$callout-border-warning: 1px solid darken($warning-color, 20%);
-$callout-border-alert: 1px solid darken($alert-color, 20%);
+$callout-border: none;
+$callout-border-secondary: none;
+$callout-border-success: none;
+$callout-border-warning: none;
+$callout-border-alert: none;
 
 // 7. Menu
 // -------
 
 $menu-item-padding: 12px;
 $menu-item-gutter: 12px;
-$menu-item-color: $blue2-color;
+$menu-item-color: $primary-color;
 
 // 8. Thumbnail
 // ------------
@@ -149,7 +146,7 @@ $menu-item-color: $blue2-color;
 $thumbnail-border: solid 4px $white;
 $thumbnail-margin-bottom: $global-margin;
 $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
-$thumbnail-shadow-hover: 0 0 6px 1px rgba($blue2-color, 0.5);
+$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
 

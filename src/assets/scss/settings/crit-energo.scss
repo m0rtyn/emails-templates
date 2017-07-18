@@ -17,16 +17,16 @@
 // ---------
 
 $light-color: #FFFFFF;
-$dark-color: #272F32;
+$dark-color: black;
 $red-color: #FF3D2E;
-$blue2-color: #9DBDC6;
+$blue2-color: #7EC7FC; //#9DBDC6;
 $blue1-color: #DAEAEF;
 
 $primary-color: #2199e8;
 $secondary-color: $blue2-color;
 $success-color: #3adb76;
 $warning-color: #ffae00;
-$alert-color: #ec5840;
+$alert-color: #FC443E; //#ec5840;
 $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -126,7 +126,7 @@ $button-rounded: $global-rounded;
 // 6. Callout
 // ----------
 
-$callout-background: $blue1-color;
+$callout-background: lighten($blue2-color, 24%);
 $callout-background-fade: 85%;
 $callout-padding: 10px;
 $callout-margin-bottom: $global-margin;

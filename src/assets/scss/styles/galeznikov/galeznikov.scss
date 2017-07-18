@@ -22,58 +22,79 @@
 .wrapper-inner {
   padding: 0 !important
 }
-//PREHEADER=============================================================================================================
-.preheader th{
-  color: $blue2-color !important;
-  font-size: 12px !important;
-  padding: 4px !important;
-  background-color: $blue2-color;
-}
-
-
 //HEADER================================================================================================================
-.wrapper-inner {
-  padding: 0 !important
-}
 
 //BODY=================================================================================================================
 .typography {
   padding-left: 40px !important;
   padding-right: 40px !important;
 }
+.galeznik-head {
+  font-size: 12px !important;
+  background-color: #f2f9fd !important;
+  .link {
+    color: #007eff !important;
+  }
+  table.button.tiny {
+    margin: 8px 0 0 0 !important;
+  }
+}
+.online-seminar {
+  span {
+    font-size: 14px !important;
+  }
+  img {
+    margin-bottom: 16px;
+  }
+  .description span{
+    font-size: 12px !important;
+  }
+}
+.speakers img {
+  width: 236px;
+}
+.container.silver tbody tr td {
+  padding: 16px !important;
+  background-color: #f1f1f1 !important;
+  margin: 0 16px;
+  h3 {
+    color: black !important;
+  }
+  .handouts span {
+    text-decoration: underline;
+  }
+  .price {
+    font-size: 18px;
+  }
+}
+.container.gold tbody tr td {
+  padding: 16px !important;
+  background-color: #ffffd1;
+  .price {
+    font-size: 18px;
+    span {
+      text-decoration: line-through;
+      color: gray !important;
+    }
+  }
+}
+
+.container.platinum tbody tr td {
+  padding: 16px !important;
+  background-color: #f2d7ce;
+  .price {
+    font-size: 18px;
+  }
+}
+
 .small-text span {
   font-size: 11px !important;
 }
 
-.product-photo {
-  width: 200px !important;
+.container .row .callout-inner.alert {
+  color: black !important;
+  background-color: #FEE5EE !important;
 }
-th.callout-inner {
-  font-size: 14px;
-  padding: 16px;
-}
-.extra-link {
-  color: $red-color !important;
-  font-weight: bold !important;
-  text-decoration: underline;
-  font-size: 12px;
-}
-p.over-button-text {
-  color: $dark-color !important;
-  margin-bottom: 16px;
-}
-.under-button-text {
-  font-size: 13px !important;
-  //color: $red-color;
-}
-table.button.button-alt table td{
-  background-color: $light-color !important;
-  border: 2px solid $red-color !important;
-}
-table.button.button-alt table td a {
-  color: $red-color !important;
-}
-
 
 //TABLE=================================================================================================================
 .table {
@@ -108,15 +129,17 @@ h4 > span {
   color: $primary-color;
 }
 .advantages__list {
-  color: $blue2-color;
-  //padding: 0 !important;
-  span {
-    color: black;
-  }
+  list-style-type: none;
+  padding: 0 !important;
+  font-size: 14px;
+}
+.advantages__title {
+  color: $primary-color;
+  font-weight: bold;
 }
 .advantages__list__item-text {
-  //color: $secondary-color;
-  //font-size: 14px;
+  color: $secondary-color;
+  font-size: 14px;
 }
 .contacts-block__title {
   font-weight: bold;
@@ -140,21 +163,9 @@ h4 > span {
 }
 
 //FOOTER================================================================================================================
+th.footer.small-12.large-12.columns.first.last {
+  padding: 0 !important;
+}
 .unsubscribe-block {
-  font-size: 14px !important;
-  font-weight: bold !important;
-}
-.mailto-link {
-  text-decoration: underline;
-}
-.footer-background.under-button-text {
-  padding: 1rem;
-  background-color: $blue2-color !important;
-  color: white !important;
-  margin-bottom: 0;
-}
-
-.footer-background.under-button-text > a {
-  color: white !important;
-  font-weight: bold;
+  font-size: 12px !important;
 }
