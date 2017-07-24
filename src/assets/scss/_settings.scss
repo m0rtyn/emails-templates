@@ -20,7 +20,7 @@ $light-color: #eef2f3;
 $dark-color: #213344;
 $red-color: #e54a3b;
 $blue2-color: #237bb3;
-$blue1-color: #3295d7;
+$blue1-color: #008EE2;
 
 $primary-color: #2199e8;
 $secondary-color: #777777;
@@ -126,11 +126,11 @@ $button-rounded: $global-rounded;
 // 6. Callout
 // ----------
 
-$callout-background: $blue1-color;
+$callout-background: lighten($blue1-color, 45%);
 $callout-background-fade: 85%;
 $callout-padding: 10px;
 $callout-margin-bottom: $global-margin;
-$callout-border: 1px solid darken($callout-background, 20%);
+$callout-border: none /*1px solid darken($callout-background, 20%)*/;
 $callout-border-secondary: 1px solid darken($secondary-color, 20%);
 $callout-border-success: 1px solid darken($success-color, 20%);
 $callout-border-warning: 1px solid darken($warning-color, 20%);
