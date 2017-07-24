@@ -16,9 +16,9 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-let email = 'web-59ixj@mail-tester.com';
+let email = 'web-gmpa9@mail-tester.com, zogacc@gmail.com';
 let htmlPath = 'dist/index.html';
-let txtPath = 'plain-text/galeznik.txt';
+let txtPath = 'plain-text/30s64nzh.txt';
 
 
 let mailOptions = {

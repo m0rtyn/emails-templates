@@ -16,17 +16,17 @@
 // 1. Global
 // ---------
 
-$light-color: #FFFFFF;
-$dark-color: black;
-$red-color: #FF3D2E;
-$blue2-color: #7EC7FC; //#9DBDC6;
-$blue1-color: #DAEAEF;
+$light-color: #eef2f3;
+$dark-color: #213344;
+$red-color: #e54a3b;
+$blue2-color: #237bb3;
+$blue1-color: #3295d7;
 
 $primary-color: #2199e8;
-$secondary-color: $blue2-color;
-$success-color: #3adb76;
-$warning-color: #ffae00;
-$alert-color: #FC443E; //#ec5840;
+$secondary-color: #777777;
+$success-color: #EF4D42;
+$warning-color: #008EE2;
+$alert-color: #ec5840;
 $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -37,7 +37,7 @@ $global-width: 600px;
 $global-width-small: 95%;
 $global-gutter: 16px;
 $body-background: white;
-$container-background: $light-color;
+$container-background: white;
 $global-padding: 16px;
 $global-margin: 16px;
 $global-radius: 3px;
@@ -60,7 +60,7 @@ $block-grid-gutter: $global-gutter;
 // 4. Typography
 // -------------
 
-$global-font-color: $dark-color;
+$global-font-color: black;
 $body-font-family: Helvetica, Arial, sans-serif;
 $global-font-weight: normal;
 $header-color: inherit;
@@ -69,26 +69,26 @@ $global-font-size: 16px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;
-$h1-font-size: 34px;
-$h2-font-size: 30px;
-$h3-font-size: 28px;
-$h4-font-size: 24px;
-$h5-font-size: 20px;
-$h6-font-size: 18px;
-$header-margin-bottom: 10px;
-$paragraph-margin-bottom: 10px;
+$h1-font-size: 32px;
+$h2-font-size: 28px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+$h6-font-size: 16px;
+$header-margin-bottom: 12px;
+$paragraph-margin-bottom: 12px;
 $small-font-size: 80%;
 $small-font-color: $medium-gray;
 $lead-font-size: $global-font-size * 1.25;
 $lead-line-height: 1.6;
-$text-padding: 10px;
+$text-padding: 12px;
 $subheader-lineheight: 1.4;
-$subheader-color: $dark-gray;
+$subheader-color: black;
 $subheader-font-weight: $global-font-weight;
 $subheader-margin-top: 4px;
 $subheader-margin-bottom: 8px;
 $hr-width: $global-width;
-$hr-border: 1px solid $dark-color;
+$hr-border: 1px solid black;
 $hr-margin: 20px auto;
 $anchor-text-decoration: none;
 $anchor-color: $blue2-color;
@@ -102,13 +102,13 @@ $stat-font-size: 40px;
 
 $button-padding: (
         tiny: 4px 8px 4px 8px,
-        small: 5px 10px 5px 10px,
-        default: 8px 16px 8px 16px,
+        small: 6px 10px 6px 10px,
+        default: 16px 24px 16px 24px,
         large: 10px 20px 10px 20px,
 );
 $button-font-size: (
         tiny: 10px,
-        small: 12px,
+        small: 13px,
         default: 16px,
         large: 20px,
 );
@@ -126,7 +126,7 @@ $button-rounded: $global-rounded;
 // 6. Callout
 // ----------
 
-$callout-background: lighten($blue2-color, 24%);
+$callout-background: $blue1-color;
 $callout-background-fade: 85%;
 $callout-padding: 10px;
 $callout-margin-bottom: $global-margin;
@@ -139,8 +139,8 @@ $callout-border-alert: 1px solid darken($alert-color, 20%);
 // 7. Menu
 // -------
 
-$menu-item-padding: 10px;
-$menu-item-gutter: 10px;
+$menu-item-padding: 12px;
+$menu-item-gutter: 12px;
 $menu-item-color: $blue2-color;
 
 // 8. Thumbnail
