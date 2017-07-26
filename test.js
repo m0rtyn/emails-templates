@@ -16,15 +16,15 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-let email = 'pol-78@yandex.ru';
-let htmlPath = 'indexes/zadvizhki-shibernye.html';
-let txtPath = 'plain-text/zadvizhki-shibernye.txt';
+let email = 'zogacc@gmail.com, poll-78@yandex.ru'; /*poll-78@yandex.ru*/
+let htmlPath = 'indexes/welcome.html';
+let txtPath = 'plain-text/welcome.txt';
 
 
 let mailOptions = {
-    from: '"ТД Армасети" <sale@gidtoteh-expert.ru>', // sender address
+    from: '"ТД Армасети" <sale@prodazha-optom.ru>', // sender address
     to: email, // list of receivers
-    subject: 'регулярное письмо с видео о складе',
+    subject: 'тест письма',
     headers: {
         "List-Unsubscribe": `<http://prodazha-optom.ru/unsubscribe/447447574654/58675865/7tftf65d7rd75d54d>`,
         "list-id" : `test sending`,
