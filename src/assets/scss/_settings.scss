@@ -103,12 +103,12 @@ $stat-font-size: 40px;
 $button-padding: (
         tiny: 4px 8px 4px 8px,
         small: 6px 10px 6px 10px,
-        default: 16px 24px 16px 24px,
+        default: 10px 24px 10px 24px,
         large: 10px 20px 10px 20px,
 );
 $button-font-size: (
         tiny: 10px,
-        small: 13px,
+        small: 14px,
         default: 16px,
         large: 20px,
 );
@@ -128,7 +128,7 @@ $button-rounded: $global-rounded;
 
 $callout-background: lighten($blue1-color, 45%);
 $callout-background-fade: 85%;
-$callout-padding: 10px;
+$callout-padding: 16px;
 $callout-margin-bottom: $global-margin;
 $callout-border: none /*1px solid darken($callout-background, 20%)*/;
 $callout-border-secondary: 1px solid darken($secondary-color, 20%);

@@ -83,7 +83,10 @@ img[alt="centrifugal"] {
   font-size: 14px !important;
 }
 .product-photo {
-  width: 400px;
+  width: 150px;
+}
+.video-preview {
+  height: 150px;
 }
 
 //WELCOME-UNSUBSCIBE====================================================================================================
@@ -93,8 +96,13 @@ img[alt="centrifugal"] {
   font-size: 32px !important;
 }
 .welcome-unsub__list {
+  font-size: 13px;
   list-style-type: square;
-  color: #EF4D42;
+  //color: #EF4D42;
+  p {
+    font-weight: bold;
+    font-size: 14px;
+  }
 }
 .welcome-unsub__link {
   font-size: 14px;
@@ -179,7 +187,7 @@ th.footer.small-12.large-12.columns.first.last {
 }
 .unsubscribe-block {
   font-size: 14px !important;
-  color: #BBBBBB !important;
+  color: #999 !important;
   a {
     border-bottom: 1px solid #BBBBBB;
   }
