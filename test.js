@@ -17,7 +17,7 @@ let transporter = nodemailer.createTransport({
 });
 
 let email = 'poll-78@yandex.ru'; /*poll-78@yandex.ru*/
-let htmlPath = 'indexes/15s65-22nzh.html';
+let htmlPath = 'dist/index.html';
 let txtPath = 'plain-text/15s65-22nzh.txt';
 
 
