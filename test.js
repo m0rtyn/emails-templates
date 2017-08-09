@@ -17,14 +17,14 @@ let transporter = nodemailer.createTransport({
 });
 
 let email = 'poll-78@yandex.ru'; /*poll-78@yandex.ru*/
-let htmlPath = 'dist/index.html';
-let txtPath = 'plain-text/15s65-22nzh.txt';
+let htmlPath = 'indexes/fmf.html';
+let txtPath = 'plain-text/fmf.txt';
 
 
 let mailOptions = {
     from: '"ТД Армасети" <sale@prodazha-optom.ru>', // sender address
     to: email, // list of receivers
-    subject: 'тест письма c вентилями',
+    subject: 'тест письма c фильтрами, правки',
     headers: {
         "List-Unsubscribe": `<http://prodazha-optom.ru/unsubscribe/447447574654/58675865/7tftf65d7rd75d54d>`,
         "list-id" : `test sending`,
