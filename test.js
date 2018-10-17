@@ -16,15 +16,15 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-let email = 'zogacc@gmail.com, poll-78@yandex.ru, web-3uwkx@mail-tester.com'; /*poll-78@yandex.ru*/
-let htmlPath = 'indexes/stalnye-zadvizhki.html';
+let email = 'zogacc@gmail.com, vladimir.martynenko@noveogroup.com'; /*poll-78@yandex.ru*/
+let htmlPath = 'dist/index.html';
 let txtPath = 'plain-text/stalnye-zadvizhki.txt';
 
 
 let mailOptions = {
     from: '"ТД Армасети" <sale@prodazha-optom.ru>', // sender address
     to: email, // list of receivers
-    subject: 'тест письма на 14 августа со стальными задвижками',
+    subject: '[SPAM] follow the white rabbit',
     headers: {
         "List-Unsubscribe": `<http://prodazha-optom.ru/unsubscribe/447447574654/58675865/7tftf65d7rd75d54d>`,
         "list-id" : `test sending`,

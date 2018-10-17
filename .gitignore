@@ -7,3 +7,4 @@ dist
 .sass-cache
 .awspublish*
 config.json
+.history
