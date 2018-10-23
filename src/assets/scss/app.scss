@@ -9,6 +9,10 @@
   font-size: 14px !important;
 }
 
+.collapse>tbody>tr>th.large-4:nth-child(2) {
+  display: table !important;
+}
+
 h1 {
   font-size: 23px;
   text-align: center;
@@ -43,8 +47,7 @@ p {
 }
 
 .footer {
-  margin-bottom: 50px;
-  //   a {
+  margin-bottom: 50px; //   a {
   //     color: #c9c9c9 !important;
   //     text-align: center;
   //   }
@@ -99,7 +102,6 @@ p {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
-
   th.ticket-body {
     &.ticket-body-top {
       border-bottom: 2px solid #45484a;
