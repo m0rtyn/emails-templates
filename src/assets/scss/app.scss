@@ -23,6 +23,7 @@ h2 {
   line-height: 21px;
   font-weight: 900;
   text-align: center;
+  margin-top: 16px;
 }
 
 p {
@@ -33,7 +34,6 @@ p {
 }
 
 .header {
-    
   th {
     padding: 0 !important;
   }
@@ -44,11 +44,10 @@ p {
 
 .footer {
   margin-bottom: 50px;
-
-//   a {
-//     color: #c9c9c9 !important;
-//     text-align: center;
-//   }
+  //   a {
+  //     color: #c9c9c9 !important;
+  //     text-align: center;
+  //   }
 }
 
 .ticket {
@@ -60,7 +59,6 @@ p {
   text-align: center;
   height: 114px;
   vertical-align: middle;
-
   h3 {
     font-size: 15px;
     line-height: 20px;
@@ -69,7 +67,6 @@ p {
     text-align: center;
     margin-bottom: 0;
   }
-
   p {
     font-size: 12px;
     line-height: 16px;
@@ -78,7 +75,6 @@ p {
     text-align: center;
     margin-bottom: 0;
   }
-
   h4 {
     font-size: 22px;
     line-height: 29px;
@@ -88,12 +84,10 @@ p {
     text-align: center;
     margin: 0;
   }
-
   &.ticket-body-top {
     border-bottom: 2px solid #45484a;
     height: 15px !important;
   }
-
   &.ticket-body-bottom {
     border-top: 2px solid #45484a;
     height: 15px !important;
@@ -101,13 +95,16 @@ p {
 }
 
 @media only screen and (max-width: 616px) {
-  th.ticket-body {
-
-    &.ticket-body-top {
-    border-bottom: 2px solid #45484a;
-    height: 15px !important;
+  .typography {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
-  
+
+  th.ticket-body {
+    &.ticket-body-top {
+      border-bottom: 2px solid #45484a;
+      height: 15px !important;
+    }
     &.ticket-body-bottom {
       border-top: 2px solid #45484a;
       height: 15px !important;
@@ -115,7 +112,8 @@ p {
   }
 }
 
-.ticket-left, .ticket-right {
+.ticket-left,
+.ticket-right {
   height: 144px !important;
 }
 
@@ -128,6 +126,7 @@ p {
   margin-bottom: 20px;
 }
 
-.unsubscribe, .about-orgs {
+.unsubscribe,
+.about-orgs {
   color: #555555
 }
