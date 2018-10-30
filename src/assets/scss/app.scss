@@ -11,6 +11,7 @@
 
 .collapse>tbody>tr>th.large-4:nth-child(2) {
   display: table !important;
+  height: 153px !important;
 }
 
 h1 {
@@ -89,11 +90,11 @@ p {
   }
   &.ticket-body-top {
     border-bottom: 2px solid #45484a;
-    height: 15px !important;
+    height: 13px !important;
   }
   &.ticket-body-bottom {
     border-top: 2px solid #45484a;
-    height: 15px !important;
+    height: 13px !important;
   }
 }
 
